@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>The ISKCON Temple</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            margin-bottom: -130px; /* Add margin-bottom to create space between nav and content */
+        }
+        .hero h1 {
+            margin-top: 10px; /* Reduce top margin of h1 */
+        }
+        .image-collage {
+            display: flex;
+            justify-content: center;
+        }
+        .image-container {
+            width: 20%;
+            padding: 1%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .info-container {
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+            font-size: 25px;
+            background-color: white;
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+        }
+        .map-marker {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div id="container">
+            <nav>
+                <img src="{{ url_for('static', filename='images/lg.png') }}" class="logo">
+                <ul>
+                    <li><a href="{{ url_for('home') }}"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+                    <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+                    
+                    <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+                   
+                </ul>
+            </nav>
+           
+           
+            <a href="{{ url_for('chat') }}" class="cta-button1"><i class="fa-solid fa-ear-listen"></i> Chat with OutAmaze</a>
+            </div>
+        
+        </div>
+    <h1>The ISKCON Temple</h1>
+    <div class="image-collage">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/fd21.jpg') }}" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/it2.jpg') }}" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/it3.jpg') }}" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/it4.jpg') }}" alt="Image 4">
+        </div>
+    </div>
+    <div class="info-container">
+        <p>The ISKCON Temple in Mumbai, officially known as the Sri Sri Radha Rasabihari Temple, is a prominent Hindu temple dedicated to Lord Krishna and Radha. Located in the Juhu area of Mumbai, India, it is a spiritual and cultural hub that has become an iconic landmark in the city.
+
+This temple is affiliated with the International Society for Krishna Consciousness (ISKCON), and it serves as a center for spiritual and cultural activities. The architecture of the temple is a magnificent blend of modern and traditional design, with its towering shikharas and ornate carvings, making it a visually striking structure.
+
+Devotees and visitors flock to the temple to participate in the daily religious ceremonies, including the aarti rituals, bhajans (devotional songs), and lectures on spiritual wisdom. The serene atmosphere within the temple complex provides a peaceful retreat from the hustle and bustle of the city, allowing individuals to connect with their spiritual side and find solace in the teachings of Lord Krishna.
+
+The ISKCON Temple also offers a glimpse into Hindu spirituality and the teachings of the Bhagavad Gita, as it hosts various educational and cultural events. The temple complex features a well-known vegetarian restaurant, Govinda's, which serves delicious and satvik (pure) cuisine.
+
+            In addition to its religious and cultural significance, the temple plays a pivotal role in various charitable and community service initiatives, embodying the spirit of selfless service and devotion. It remains a must-visit destination for both spiritual seekers and tourists, contributing to the cultural diversity and vibrancy of Mumbai's landscape.
+        </p>
+        <p>ISKCON Temple Mumbai Address: Sri Sri Radha Rasabihari Temple, Hare Krishna Land, Juhu Church Road, Juhu, Mumbai, Maharashtra, 400049, India</p>
+        <p>Timings: 
+         ISKCON Temple Mumbai Timings
+Day	Timing
+Monday	    4:30 am – 1:00 pm
+            4:30 pm – 9:00 pm
+Tuesday	    4:30 am – 1:00 pm
+            4:30 pm – 9:00 pm
+Wedesday	4:30 am – 1:00 pm
+            4:30 pm – 9:00 pm
+Thursday	4:30 am – 1:00 pm
+            4:30 pm – 9:00 pm
+Friday	    4:30 am – 1:00 pm
+            4:30 pm – 9:00 pm
+Saturday	4:30 am – 1:00 pm
+            4:30 pm – 9:00 pm
+Sunday	    4:30 am – 1:00 pm
+            4:30 pm – 9:00 pm</p>
+        <a href="https://maps.app.goo.gl/Vu2Cj1EFZZ9F641U9" class="map-marker">
+    <i class="fa fa-map-marker"></i> Visit on Google Maps
+</a>
+
+    </div>
+</body>
+</html>

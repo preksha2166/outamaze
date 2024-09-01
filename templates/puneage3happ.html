@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in PUNE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+        </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.0YgqY6VnxTl72GKlQZNBUgHaEK?pid=ImgDet&rs=1" alt="Destination 1" class="destination-image">
+            <h2>Dagdusheth Halwai Ganpati Temple</h2>
+            <p> A revered temple dedicated to Lord Ganesha, known for its grand celebrations during Ganesh Chaturthi.
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.JAeI5nT4ZOEb7aHHH6CtUgHaJB?pid=ImgDet&rs=1" alt="Destination 2" class="destination-image">
+            <h2>Parvati Hill Temple</h2>
+            <p>Situated atop Parvati Hill, this temple is dedicated to the goddess Parvati and offers panoramic views of Pune.
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.5ebe07f9ceaa829da45d852c09877f3b?rik=SREh0cDrQ1Rrkw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-UPhSUV-WDao%2fU-JB3XP6VoI%2fAAAAAAAAHUw%2fr2GRLZd8YZo%2fs1600%2fPune_Chaturshringi_Temple%2b(4).JPG&ehk=pFmYoQyqny3vePA3h8mdsurfv4kpan8qkG8U4gsKTMs%3d&risl=&pid=ImgRaw&r=0" alt="Destination 3" class="destination-image">
+            <h2>Chaturshringi Temple</h2>
+            <p>A temple dedicated to the goddess Chaturshringi, located on Senapati Bapat Road.
+
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.RSiV4nhXNdYcCVrC__cxPwHaE8?pid=ImgDet&rs=1"alt="Destination 4" class="destination-image">
+            <h2>ISKCON NVCC Temple
+</h2>
+            <p> A beautiful temple dedicated to Lord Krishna, part of the International Society for Krishna Consciousness.
+
+
+
+
+</p>
+                        <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://jothishi.com/wp-content/uploads/2019/02/Omkareshwar.jpg" alt="Destination 5" class="destination-image">
+            <h2>Omkareshwar Temple</h2>
+            <p>A Shiva temple known for its peaceful ambiance, situated along the Mutha River.
+
+
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://www.placestovisitindia.in/wp-content/uploads/2017/06/sarasbaug-ganpati-temple.jpg" alt="Destination 6" class="destination-image">
+            <h2>Sarasbaug Ganpati Temple</h2>
+            <p>Another temple dedicated to Lord Ganesha, located in the Saras Baug area.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+            </div>
+    </div></body>
+</html>

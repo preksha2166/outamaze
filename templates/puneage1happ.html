@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in PUNE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://i.ytimg.com/vi/h7a0Q5-b1u8/maxresdefault.jpg" alt="Destination 1" class="destination-image">
+            <h2>Darshan Museum</h2>
+            <p>Darshan is not really a 'museum' in the conventional sense of the term. Although it does what every museum does, keeps alive a memory, but at Darshan, it's done through 3D Holographics</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://im.whatshot.in/img/2020/Apr/phoenix-marketcity-1-1586430858.jpg" alt="Destination 2" class="destination-image">
+            <h2>Phoenix Market City</h2>
+            <p>
+Phoenix mall is one of the best mall of Pune and situated in the mid of Viman Nagar. ample parking is available. All brand showrooms with latest variety through out the year you may find.
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://punetourism.co.in/images/places-to-visit/headers/pune-okayama-friendship-garden-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Destination 3" class="destination-image">
+            <h2>Pune-Okayama Friendship Garden</h2>
+            <p>
+Amidst busy city place,it's a quiet,serene place.Well maintained garden Good for a short visit. Calm,Quiet,Peaceful nature.
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://static.toiimg.com/photo/40868552/.jpg" alt="Destination 4" class="destination-image">
+            <h2>Raja Dinkar Kelkar Museum</h2>
+            <p>
+The area doesn't look huge. It's located in a narrow lane where parking is an issue. But forget all that. Once you step inside you'll discover a whole world of amazing idols, historic objects, ancient paintings, musical instruments and much much more.
+
+
+
+</p>
+            
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/1/18/w900X450/Er09wMMUcAEeqGh.jpg" alt="Destination 5" class="destination-image">
+            <h2>National Defence Academy</h2>
+            <p>
+Very large expansive campus having all kind of amenities for training of the cadets and very large mess. Must visit if you can manage
+
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://punetourism.co.in/images/places-to-visit/headers/sinhagad-fort-pune-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Destination 6" class="destination-image">
+            <h2>Sinhagad Fort</h2>
+            <p>
+Must visit historical place in Pune with scenic sahydrri ranges.One of the popular destination among trkkers.Also, a place close to heart for Morning walks. This fort had played a vital role in freedom struggle. Easy for trek.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+            </div>
+    </div></body>
+</html>
+

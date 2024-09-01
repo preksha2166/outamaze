@@ -1,0 +1,665 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Apply a background color and set the text color */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+/* Header styles */
+header {
+     /* Prevent the background image from repeating */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align the logo and navigation */
+    align-items: center; /* Vertically center the logo and navigation */
+    height: 100vh;
+    text-align: center;
+}
+
+/* Logo styles */
+#header{
+    width:100%;
+    height:100vh;
+    background-image:url(images/5590457.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    padding: 10px 10%;
+    
+}
+nav {
+    position: fixed; /* Keep the navigation bar fixed */
+    top: 0; /* Align the navigation bar to the top of the viewport */
+    left: 0; /* Align the navigation bar to the left of the viewport */
+    width: 100%; /* Set the width to cover the entire viewport */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    backdrop-filter: blur(2px); /* Adjust the blur intensity as needed */
+    -webkit-backdrop-filter: blur(2px); /* Safari */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and opacity */
+    z-index: 1000; /* Ensure the navigation bar is on top of other content */
+    /* Other styles for your nav bar */
+}
+
+.logo{
+    width:180px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px; 
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    
+    
+}
+nav ul li a i {
+    margin-right: 5px; /* Adjust as needed to create space between icon and text */
+}
+
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+    
+}
+
+#header {
+    background-color: #333; /* Set your desired background color */
+    color: white; /* Set your desired text color */
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+#header-text h1 {
+    font-size: 60px;
+    color: white;
+    margin-right: 0;
+    overflow: hidden;
+    margin-top: 100px;
+   
+    
+}
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 85px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 20px;
+    
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 100 px;
+}
+
+.cta-button:hover {
+    background-color: #d44100;
+}
+.cta-button1 {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    /*margin-bottom: -450px;*/
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 9999; /* Ensure the button overlaps everything */
+    
+}
+
+.cta-button1:hover {
+    background-color: darkblue;
+}
+.or-text {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between "or" text and buttons */
+}
+
+.decor{
+    width:300px;
+}
+
+
+/* Features section styles */
+#features {
+    background-color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.feature {
+    width: 30%;
+    text-align:center;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.feature img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.feature-img img{
+    background-color: #fff;
+}
+
+.feature h3 {
+    margin-bottom: 3rem;
+}
+
+/* About section styles */
+#about {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+}
+
+#about h2{
+    text-align: center;
+    font-family: cursive;
+}
+#about p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact section styles */
+
+#contact {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button[type="submit"] {
+    display: block;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+#contact button[type="submit"]:checked::after{
+    color: black;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Services section styles */
+#services {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+.search-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*features*/
+
+.features
+{
+    padding:100px 0;
+    background-color:darkgrey;
+    
+}
+
+.features h1
+{
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+.feature-img
+{
+    position: relative;
+    
+}
+
+.feature-img img
+{
+    width:100%;
+    padding:30px 0px;
+}
+.rating
+{
+    padding:3px;
+    float:right;
+    background:#fff;
+    bottom: -1px;
+    right:0;
+    position:absolute;
+    
+    
+}
+
+.features .fa
+{
+    font-size:15px;
+    color:#ff5722;
+}
+
+.feature-details
+{
+    padding:20px;
+    text-align:justify;
+    background-color:white; 
+}
+
+.feature-details fa
+{
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.feature-box
+{
+    box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+    margin-bottom: 30px;
+}
+
+.gallery
+{
+    text-align:center;
+    background: #efefef;
+    padding:50px;
+}
+
+.gallery-box img
+{
+    
+    width:100%;
+    border-radius:10px;
+    cursor: pointer;
+}
+.gallery-box img:hover
+{
+    transform: scale(1.1);
+}
+.gallery-box h4
+{ 
+    display:block;
+    text-shadow: -2px 2px 2px #000;
+    font-size: 30px;
+    color:#fff;
+    width:200px;
+    text-align:center;
+    font-weight: 600;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-box
+{
+    position: relative;
+    margin-bottom:30px;
+}
+
+.it-link{
+    text-decoration: none;
+    color: #fff;
+}
+.decor{
+    width:600px;
+    margin-bottom:10px;
+}
+
+/*footer section...................................*/
+
+/* Footer container */
+footer {
+    background-color: #333; /* Change the background color as desired */
+    color: #fff; /* Text color */
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+/* Center the content in each column */
+.col-md-4 {
+    text-align: center;
+}
+
+/* Style headings */
+h3 {
+    color: #fff;/* Heading color */
+    margin-left: 30px;
+}
+
+/* Style links */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ccc; /* Link color on hover */
+}
+
+/* Social links */
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: #fff; /* Social icon color */
+    font-size: 20px; /* Adjust icon size as needed */
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #ccc; /* Social icon color on hover */
+}
+
+/*Search page*************************************/
+#search{
+    background-color: #f4f4f4;
+}
+.search-container{
+    margin-top: 10%;
+    background-color: cornsilk;
+    margin-left: 80px;
+}
+
+.partition-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4; /* Center contents horizontally */
+}
+
+.search-container {
+    flex: 1;
+}
+
+.empty-space {
+    flex: 1;
+    max-width: 50%; /* Limit the empty space to half of the container */
+    border-left: 5px dotted #ccc; /* Dotted line style */
+    min-height:500px;
+    margin-top: 50px;
+}
+.search-group button{
+    color: white;
+    background-color: orange;
+}
+
+/*bot styles*************************************/
+/* General styles */
+.bot-page {
+    background-image: url(images/1_iGdFJTHMIG79N2HChWaooQ.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+.chat-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 900px;
+  
+}
+
+
+
+.chat-area {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: calc(100% - 70px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat message styles */
+.chat-message {
+  margin-bottom: 10px;
+  padding-bottom: 50px;;
+}
+
+.user-message {
+  text-align: right;
+}
+
+.bot-message {
+  text-align: left;
+  color: #333;
+  
+}
+
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .feature h3 {
+        font-size: 20px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+        #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea {
+        font-size: 14px;
+    }
+
+    #contact button[type="submit"] {
+        font-size: 16px;
+
+
+    }
+
+    
+    
+}
+
+
+

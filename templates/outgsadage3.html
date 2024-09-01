@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in MUMBAI</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.b1UUW2y6LNkVPlHCFZkm4wHaE7?pid=ImgDet&rs=1" alt="Destination 1" class="destination-image">
+            <h2>Forest Park</h2>
+            <p>
+Amidst the sky scrapers at Hiranandani is a green patch that Powai residents look forward to. Forest Park is a non-manicured forest leftover that still retains that old world charm with gazebos and paths lined with rocks</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.ceOKHI-LceoQkEQk5VwyqQAAAA?pid=ImgDet&rs=1" alt="Destination 2" class="destination-image">
+            <h2>Hitchki</h2>
+            <p>Continental restaurant in ghatkopar </p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.4C0AwEajKKAcuQTZK0R-igHaE5?pid=ImgDet&rs=1" alt="Destination 3" class="destination-image">
+            <h2>Love Ghatkopar Selfie Point</h2>
+            <p>3WM4+5VW, Hingwala Ln, Saibaba Nagar, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400077</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://hiranandani.com/img/gallery/gallery-garden-powai/045.jpg" alt="Destination 4" class="destination-image">
+            <h2>Mcgm Hiranandani Garden</h2>
+            <p>Good view, nicely maintained, good plantation, had a beautiful evenings time spent with family.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.003c688f7903b2ec0c858e905359936c?rik=526lPN4r6G4I0A&riu=http%3a%2f%2fs3.india.com%2ftravel%2fwp-content%2fuploads%2f2016%2f04%2fMumbai-Film-City.jpg&ehk=GiIz7lrEgjB%2bm2JWhhriGI0uzPDM3%2fnQHmmPbJhpRLw%3d&risl=&pid=ImgRaw&r=0" alt="Destination 5" class="destination-image">
+            <h2>Mumbai Film City</h2>
+            <p> Located nearby, this is where many Bollywood films and television shows are produced. You can take guided tours to explore the sets.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.c36a3dbd5778461a2c93e9c1e22a7533?rik=Ja79jn%2bBhlGFQQ&riu=http%3a%2f%2fblessingsonthenet.com%2fimg%2fuploads%2fhotels%2fgallery%2faim_bn_1_1307513803.jpg&ehk=uijmaWXF63PN2dZqgFNJ6uOkYSgv%2fvX93JKr4vGimqg%3d&risl=&pid=ImgRaw&r=0" alt="Destination 6" class="destination-image">
+            
+            
+            <h2>Renaissance Mumbai Convention Centre Hotel</h2>
+            <p> A luxury hotel with beautiful views of Powai Lake, it's a great place to dine and unwind.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in HYDERABAD</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://dimg04.c-ctrip.com/images/100d10000000p9eoz2F59.jpg?proc=source%2Ftrip" alt="Destination 1" class="destination-image">
+            <h2>Lumbini Park</h2>
+            <p> Located near Hussain Sagar Lake, it's known for its boating and light show.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://i.pinimg.com/originals/da/7f/44/da7f440383b538106efd79ab7010da77.jpg" alt="Destination 2" class="destination-image">
+            <h2>Nehru Zoological Park</h2>
+            <p> A large zoo with a variety of animals and a natural history museum.
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://imgmedia.lbb.in/media/2018/07/5b5979072d251e6b412c7e40_1532590343375.jpg?w=1200&h=628&fill=blur&fit=fill" alt="Destination 3" class="destination-image">
+            <h2>KBR National Park</h2>
+            <p>A peaceful urban wilderness with walking trails and wildlife.
+
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.60958d4a7834e8cf408205cb2a7459f9?rik=1GrI2qdSOScWyQ&riu=http%3a%2f%2fwww.walk4health.in%2fimages%2f003_Botanical_Entrance_004_nu.jpg&ehk=yThOlnv15o0ZDxx29sgx1oA%2baj8%2f0FwcsjSVxGo1kpE%3d&risl=&pid=ImgRaw&r=0" alt="Destination 4" class="destination-image">
+            <h2>Botanical Gardens</h2>
+            <p> The Kothaguda Reserve Forest has been developed into a botanical garden with a wide variety of plants.
+
+
+
+
+</p>
+            
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://images.unsplash.com/photo-1529259412305-4e143a297430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8bG90dXMlMjBwb25kfHwwfHx8fDE2MjkyODk3NjY&ixlib=rb-1.2.1&q=80&w=1080" alt="Destination 5" class="destination-image">
+            <h2>Lotus Pond</h2>
+            <p> A scenic water body with lotus flowers, often used for picnics.
+
+
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://www.touristplaces.net.in/images/pp/5/p106622.jpg" alt="Destination 6" class="destination-image">
+            <h2>Sanjeevaiah Park</h2>
+            <p>Situated along the Hussain Sagar Lake, it's great for leisurely walks and enjoying the view.
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+            </div>
+    </div></body>
+</html>
+

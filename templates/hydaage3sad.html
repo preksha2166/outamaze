@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in HYDERABAD</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="des.jpg" alt="Destination 1" class="destination-image">
+            <h2>Lumbini Park</h2>
+            <p>This park offers scenic views of the Hussain Sagar Lake, and its boating options are popular with older adults.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://i.pinimg.com/originals/6e/bd/b9/6ebdb9173962efd4ed6a25ffb071bb3b.jpg" alt="Destination 2" class="destination-image">
+            <h2>Senior Living Communities</h2>
+            <p> There are various senior living communities in and around Hyderabad that provide comfortable and safe environments for the elderly.
+
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.d5c2a98b83b5d9007a67f5c118490297?rik=gct%2b6VcWLCAW5w&riu=http%3a%2f%2fwww.walk4health.in%2fimages%2fKBR_Park_026.jpg&ehk=YMCJdS0SuLqHUVIyzj3NCXlOFFeJAE%2bb1oABdLdTOq4%3d&risl=&pid=ImgRaw&r=0" alt="Destination 3" class="destination-image">
+            <h2>KBR Park </h2>
+            <p>KBR Park is a peaceful and well-maintained park where seniors can take leisurely walks and enjoy the serene surroundings.
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="http://images.trvl-media.com/media/content/shared/images/travelguides/destination/6053329/Nehru-Zoological-Park-75521.jpg" alt="Destination 4" class="destination-image">
+            <h2>Nehru Zoological Park</h2>
+            <p>The zoo is a great place for seniors who enjoy outdoor activities and wildlife.</p>
+            
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/06/20184416/Salarjung-Museum.jpg" alt="Destination 5" class="destination-image">
+            <h2>Salar Jung Museum</h2>
+            <p> This museum houses a vast collection of art and antiques and provides an excellent place for seniors interested in culture and history.
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2021/tvpatrol/08/05/20191118-dole-senior-citizen-pcmc-md-0585.jpeg" alt="Destination 6" class="destination-image">
+            <h2>Senior Citizen Associations</h2>
+            <p>Many localities in Hyderabad have senior citizen associations that organize social events and activities for older</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+            </div>
+    </div></body>
+</html>
+

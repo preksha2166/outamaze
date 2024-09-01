@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in HYDERABAD</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://i.pinimg.com/originals/6e/e6/8d/6ee68d6c8b58af78f7ffc1df3a6e7811.jpg" alt="Destination 1" class="destination-image">
+            <h2>Birla Mandir (Venkateswara Temple)</h2>
+            <p>A beautiful temple dedicated to Lord Venkateswara, offering a serene atmosphere for meditation.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-fbj5l21886pn4k4gkt8qn1ro71-20190102004736.Medi.jpeg" alt="Destination 2" class="destination-image">
+            <h2>Chilkur Balaji Temple</h2>
+            <p>Known as the "Visa Balaji Temple," it's a place of worship and meditation.
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/05/22124224/Isckon.jpg" alt="Destination 3" class="destination-image">
+            <h2>ISKCON Temple</h2>
+            <p>The International Society for Krishna Consciousness has a prominent temple in Hyderabad.
+
+
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.htb2-eCzFc_wqlLgfEQpWAHaE7?pid=ImgDet&rs=1" alt="Destination 4" class="destination-image">
+            <h2>Sivananda Yoga Vedanta Centre</h2>
+            <p>Offers yoga and meditation classes for spiritual seekers.
+
+
+
+
+</p>
+            
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://farm4.staticflickr.com/3941/33193678933_a9e22b12b0_b.jpg" alt="Destination 5" class="destination-image">
+            <h2>Sri Ramakrishna Math</h2>
+            <p>A center for meditation, spiritual lectures, and discourses.
+
+
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/07/43/cd/osho-meditation-resort.jpg" alt="Destination 6" class="destination-image">
+            
+           
+            <h2>Osho Meditation Resort</h2>
+            <p>Known for its dynamic meditation techniques and tranquil environment.
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+            </div>
+    </div></body>
+</html>
+

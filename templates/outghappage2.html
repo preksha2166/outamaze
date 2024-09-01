@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in MUMBAI</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2873&q=80" alt="Destination 1" class="destination-image">
+            <h2>R City mall</h2>
+            <p>This popular shopping mall in Ghatkopar offers a wide range of retail stores, restaurants, and entertainment options. You can shop, dine, watch movies, or simply stroll around and enjoy the vibrant atmosphere</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.n635z-Iw-h8ssKH-4XnkyQHaFS?pid=ImgDet&rs=1" alt="Destination 2" class="destination-image">
+            <h2>Jolly Gymkhana</h2>
+            <p>If you're into sports and recreational activities, Jolly Gymkhana is a great place. You can play cricket, badminton, or take a refreshing swim in their pool.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://www.caleidoscope.in/wp-content/uploads/2020/10/Kharghar-Khau-Galli-Mumbai-627x420.jpg" alt="Destination 3" class="destination-image">
+            <h2>Khau gali</h2>
+            <p></p>Ghatkopar's Khau Galli is a haven for food lovers. You can savor a variety of street foods, snacks, and desserts that are sure to tantalize your taste buds.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.93f9f377f9d1bffc1a95caad69ef4c2b?rik=n9lSOlkajIQTuQ&riu=http%3a%2f%2fphotos.wikimapia.org%2fp%2f00%2f06%2f31%2f91%2f91_big.jpg&ehk=jYd3DVruLCh7OpJeN%2bmdTVrLoUF0pITMjs0FcVItblY%3d&risl=&pid=ImgRaw&r=0" alt="Destination 4" class="destination-image">
+            <h2>Shreyas cinema</h2>
+            <p>Catching a movie at Shreyas Cinema can be a fun and entertaining way to spend your time. It's a popular cinema in the area.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://blogs.revv.co.in/blogs/wp-content/uploads/2020/05/Dagdusheth-Halwai-Ganpati-Temple-Pune.jpg" alt="Destination 5" class="destination-image">
+            <h2>Chheda Nagar Ganpati Temple</h2>
+            <p>Visit this ancient Ganpati Temple to seek blessings and experience a sense of tranquility.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.3d1047e717b01306e38c06d41ce3c61e?rik=ocTQlJUv5hw0fA&riu=http%3a%2f%2fwww.retail4growth.com%2fpublic%2fuploads%2feditor%2f2021-03-02%2f1614662740.jpg&ehk=GsCmC8uxN4LjavQHQMNe49c6IQb%2bNF2CmlPHi7a4Z%2f8%3d&risl=&pid=ImgRaw&r=0" alt="Destination 6" class="destination-image">
+           
+            <h2>Shoppers Stop</h2>
+            <p>Located in R City Mall, Shoppers Stop is a well-known department store offering a wide range of clothing, accessories, and household items.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+    </div>
+</body>
+</html>

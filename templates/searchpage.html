@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Mood Age Search</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        .hero {
+            margin-bottom: -130px; /* Add margin-bottom to create space between nav and content */
+        }
+        .hero h1 {
+            margin-top: 10px; /* Reduce top margin of h1 */
+        }
+
+        .partition-line {
+            border: none;
+            height: 100%;
+            width: 2px;
+            background-image: radial-gradient(circle, #000 1px, transparent 1px);
+            background-size: 4px 4px;
+            background-repeat: repeat-y;
+            margin: 0 20px; /* Adjust the left and right margin as needed */
+        }
+        
+        .vertical {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .decor{
+            width:8 00px;
+            margin-bottom:10px;
+            padding-top:180px;
+            padding-right:150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search">
+    <div class="partition-container">
+    <div class="search-container">
+        <div class="hero">
+            <div id="container">
+                <nav>
+                    <img src="{{ url_for('static', filename='images/lg.png') }}" class="logo">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+                        <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+                        
+                        <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+                       
+                    </ul>
+                </nav>
+               
+               
+                <a href="{{ url_for('chat') }}" class="cta-button1"><i class="fa-solid fa-ear-listen"></i> Chat with OutAmaze</a>
+                </div>
+            
+            </div>
+        <h1>The Recommender</h1>
+        <form method="POST" action="{{ url_for('search_results') }}">
+<div class="search-group">
+                <label for="city">City:</label>
+                <select name="city" id="option1">
+                    <option value="1">Mumbai</option>
+                    <option value="2">Pune</option>
+                    <option value="3">Hyderabad</option>
+                </select>
+            </div>
+            <div class="search-group">
+                <label for="mood">Mood:</label>
+                <select name="mood" id="option2">
+                    <option value="A">Happy</option>
+                    <option value="B">Sad</option>
+                </select>
+            </div>
+            <div class="search-group">
+                <label for="age">Age Category:</label>
+                <select name="age" id="option3">
+                    <option value="X">4-15 years</option>
+                    <option value="Y">15-40 years</option>
+                    <option value="Z">40-60 years & above</option>
+                </select>
+            </div>
+            <div class="search-group">
+                <button type="button" onclick="openPage()">Submit</button>
+            </div>
+
+         </form>
+    </div>
+
+    <div class="refer-img">
+        <img src="{{ url_for('static', filename='images/rb.jpg  ') }}" class="decor">
+    </div>
+    
+</div>
+<div class="partition-line vertical"></div>
+</div>
+
+
+<script>
+    function openPage() {
+        var city = document.getElementById("option1").value;
+        var mood = document.getElementById("option2").value;
+        var age_category = document.getElementById("option3").value;
+
+        var combinations = {
+            "1AX": "{{ url_for('destinations_template', city=1, mood='A', age_category='X') }}",
+            "1AY": "{{ url_for('outghappage2') }}",
+            "1AZ": "{{ url_for('outghappage3') }}",
+            "1BX": "{{ url_for('outgsadage1') }}",
+            "1BY": "{{ url_for('outgsadage2') }}",
+            "1BZ": "{{ url_for('outgsadage3') }}",
+            "2AX": "{{ url_for('puneage1happ') }}",
+            "2AY": "{{ url_for('puneage2happ') }}",
+            "2AZ": "{{ url_for('puneage3happ') }}",
+            "2BX": "{{ url_for('puneage1sad') }}",
+            "2BY": "{{ url_for('puneage2sad') }}",
+            "2BZ": "{{ url_for('puneage3sad') }}",
+            "3AX": "{{ url_for('hydaage1happ') }}",
+            "3AY": "{{ url_for('hydaage2happ') }}",
+            "3AZ": "{{ url_for('hydaage3happ') }}",
+            "3BX": "{{ url_for('hydaage1sad') }}",
+            "3BY": "{{ url_for('hydaage2sad') }}",
+            "3BZ": "{{ url_for('hydaage1sad') }}"
+
+        };
+
+        var combinationKey = city + mood + age_category;
+
+        if (combinations[combinationKey]) {
+            window.location.href = combinations[combinationKey];
+        } else {
+            // Handle the case where no valid combination is found
+            alert("Invalid combination");
+        }
+    }
+</script>
+
+        
+    
+</body>
+</html>

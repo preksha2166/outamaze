@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in HYDERABAD</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://c1.staticflickr.com/5/4100/4809170692_28cc25f113_b.jpg" alt="Destination 1" class="destination-image">
+            <h2>Necklace Road</h2>
+            <p>A scenic promenade alongside Hussain Sagar Lake, great for evening walks and street foodL</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.AX0gmz6esc0LAT-rFiVHgQHaEJ?pid=ImgDet&w=1769&h=991&rs=1" alt="Destination 2" class="destination-image">
+            <h2>Lazer Ops</h2>
+            <p>An indoor laser tag arena for exciting games with friends.
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.24e01a62f878e97f3b754042db230213?rik=YK%2bJewnzOfxbHA&riu=http%3a%2f%2fandhra.mallsmarket.com%2fsites%2fdefault%2ffiles%2fphotos%2fmalls%2fInorbitMall-Cyberabad-2.jpg&ehk=W7H2SozstNdiTJn7ccOBwPy1okar9da0YReYyKfTMrg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Destination 3" class="destination-image">
+            <h2>Iorbit Mall</h2>
+            <p>IA popular shopping and entertainment destination with a cinema, gaming zones, and food courts.
+
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.0b06db505412012da4c51f767c49b3eb?rik=Q2kJVMK8lObRdQ&riu=http%3a%2f%2farabfranchisemagazine.com%2fwp-content%2fuploads%2f2021%2f03%2fEscapeHunt-room.jpg&ehk=janpTqOoteumi4j1oMoRIXHlvnJr78YhK32y3%2bTLRG8%3d&risl=&pid=ImgRaw&r=0" alt="Destination 4" class="destination-image">
+            <h2>Escape Hunt</h2>
+            <p> A real-life escape room experience that challenges problem-solving skills.
+</p>
+            
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://cdn.siasat.com/wp-content/uploads/2020/09/photo_2020-09-12-11.51.04.jpeg" alt="Destination 5" class="destination-image">
+            <h2>Durgam Cheruvu</h2>
+            <p> A serene lake with beautiful surroundings, ideal for picnics and relaxation.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://im.whatshot.in/img/2018/Jun/snow-world-1528806791.jpg" alt="Destination 6" class="destination-image">
+            <h2>Snow World</h2>
+            <p> An indoor snow park for a unique and chilly experience
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+            </div>
+    </div></body>
+</html>
+

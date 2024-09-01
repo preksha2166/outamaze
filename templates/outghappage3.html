@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in MUMBAI</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.zkNcg1nAFqICMa3y1zO9FgHaEK?pid=ImgDet&rs=1" alt="Destination 1" class="destination-image">
+            <h2>Suvarna Temple</h2>
+            <p>
+Suvarna Temple is also known as "Shree Mahashesha Rundamalini Temple" or "Nine Mother Children Temple" and is indeed a unique temple in its own.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://i.ytimg.com/vi/FUYcl4UJ7q4/maxresdefault.jpg" alt="Destination 2" class="destination-image">
+            <h2>Jagadeeshwara Mandir</h2>
+            <p>
+A beautiful and tranquil temple in the panoramic campus of Chinmaya Mission’s Sandeepany Sadhanalaya, Chinmaya Jagadeeswara Temple holds the faith of lakhs of visitors and devotees from all over the world as one of the most meditative and empowering temple sanctums.
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.b7c1b25afff4ea22453be3b803a51709?rik=n1ln8FRRScLdNQ&riu=http%3a%2f%2fwikitravel.org%2fupload%2fshared%2f9%2f92%2fSri_Ranganathasvamy_temple_in_Tiruchirapalli.jpg&ehk=LV6c1DkOae73v5%2fhiesm%2fiCTrK3KG4bKdDp5P4EVI3U%3d&risl=&pid=ImgRaw&r=0" alt="Destination 3" class="destination-image">
+            <h2>Sri Ayyappa Vishnu Temple </h2>
+            <p>
+We are here to Provide Services which Focus on Customer Centricity Rather Than Profit Making Motive in Such Competitive Market We Are Working In Mumbai City We are Dealing in Temples.
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.QmQdOjBo5R0uMROrbZ7mGgHaE8?pid=ImgDet&rs=1" alt="Destination 4" class="destination-image">
+            <h2>Shree Swaminarayan Mandir Ghatkopar (Vadtal Sansthan)</h2>
+            <p>
+RB Mehta Marg, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra, </p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.vprG5Kh2icAWzVi6WFJoyAAAAA?pid=ImgDet&rs=1" alt="Destination 5" class="destination-image">
+            <h2>Shri Tirupati Balaji Temple</h2>
+            <p>
+3WH4+C5X, Tilak Rd, near Axis Bank, Raja Wadi, Maheshwar Nagar, Sindhu Wadi, Ghatkopar East, Mumbai, Maharashtra 400077</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.5nKZS3QUT5gftWlIxo02IwHaEK?pid=ImgDet&rs=1" alt="Destination 6" class="destination-image">
+            <h2>Shree SiddhiVinayak Ganesh Mandir </h2>
+            <p> 
+90 Feet Road Shivneri Chowk, 214, Barrister Nath Pai Rd, MHADA Colony, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400075
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+</body>
+</html>

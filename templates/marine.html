@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Marine Drive</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0; /* Reset default body margin */
+            padding: 0; /* Reset default body padding */
+        }
+        .hero {
+            margin-bottom: -130px; /* Add margin-bottom to create space between nav and content */
+        }
+        .hero h1 {
+            margin-top: 10px; /* Reduce top margin of h1 */
+        }
+        .image-collage {
+            display: flex;
+            justify-content: center;
+        }
+        .image-container {
+            width: 20%;
+            padding: 1%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .info-container {
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+            font-size: 25px;
+            background-color: white;
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+        }
+        .map-marker {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+   
+   
+        <div class="hero">
+        <div id="container">
+            <nav>
+                <img src="{{ url_for('static', filename='images/lg.png') }}" class="logo">
+                <ul>
+                    <li><a href="{{ url_for('home') }}"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+                    <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+                    
+                    <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+                   
+                </ul>
+            </nav>
+           
+           
+            <a href="{{ url_for('chat') }}" class="cta-button1"><i class="fa-solid fa-ear-listen"></i> Chat with OutAmaze</a>
+            </div>
+        
+        </div>
+        <h1>Marine Drive</h1>
+        
+    
+    <div class="image-collage">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/pg1 (4).jpg') }}" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/pg1 (5).jpg') }}" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/pg1 (6).jpg') }}" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/pg1 (7).jpg') }}" alt="Image 4">
+        </div>
+    </div>
+    <div class="info-container">
+        <p>Marine Drive is a 3 kilometre-long Promenade along the Netaji Subhash Chandra Bose Road in Mumbai, India. The road and promenade were constructed by Pallonji Mistry. It is a banana-shaped, six-lane concrete road along the coast of a natural bay. At the northern end of Marine Drive is Girgaon Chowpatty and the adjacent road along links Nariman Point at southern tip to Babulnath and Malabar Hill at northern tip. Marine Drive is situated on reclaimed land facing west-south-west. Marine Drive is also known as the Queen's Necklace because, when viewed at night from an elevated point anywhere along the drive, the street lights resemble a string of pearls in a necklace.
+            he official name for this road, though rarely used, is Netaji Subhash Chandra Bose Road. The promenade is lined with palm trees. At the northern end of Marine Drive is Chowpatty Beach. This is a popular beach famed for its Bhel Puri (local fast food). Many restaurants also line this stretch of the road. Further down this road lies Walkeshwar, a wealthy neighborhood of the city, also home to the Governor of Maharashtra.
+        </p>
+        <p>Marine Drive, Chowpatty, Marine Lines, Mumbai, Maharashtra 400021</p>
+
+        <a href="https://maps.app.goo.gl/BpNysBeerw2DdRas7" class="map-marker">
+    <i class="fa fa-map-marker"></i> Visit on Google Maps
+</a>
+
+    </div>
+</body>
+</html>

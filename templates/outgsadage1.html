@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in MUMBAI</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.0T41rnd-96FoqE4kZdNmqAHaEK?pid=ImgDet&rs=1" alt="Destination 1" class="destination-image">
+            <h2>Powai Plaza</h2>
+            <p>A shopping complex in Hiranandani Gardens, Powai Plaza is known for its stores, restaurants, and cafes.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://2.bp.blogspot.com/-dgKDgS79L7o/U4Q_SA6_vwI/AAAAAAAACZA/FsGT73ofO84/s1600/coppersmith_barbaret.jpg" alt="Destination 2" class="destination-image">
+            <h2>Powai Bird Watching</h2>
+            <p>if you're a bird enthusiast, Powai Lake is a good spot for bird watching, especially during the winter months when migratory birds visit the area.
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://media.weddingz.in/images/44a348f7baab4cc0784a9a95ed72e825/lilac-1.jpg" alt="Destination 3" class="destination-image">
+            <h2>jolly jymkhana</h2>
+            <p>If you're into sports and recreational activities, Jolly Gymkhana is a great place. You can play cricket, badminton, or take a refreshing swim in their pool.
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://imgmedia.lbb.in/media/2020/01/5e295d9482c85d3ae36d9b3c_1579769236599.jpg" alt="Destination 4" class="destination-image">
+            <h2>Shoppers Stop</h2>
+            <p>Located in R City Mall, Shoppers Stop is a well-known department store offering a wide range of clothing, accessories, and household items.
+
+</p>
+            
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.lkPzO4V6VkJd-F-P4y5ZMgHaEJ?pid=ImgDet&w=640&h=359&rs=1" alt="Destination 5" class="destination-image">
+            <h2>IIT Bombay</h2>
+            <p>The Indian Institute of Technology Bombay campus is an impressive educational institution. While not all areas may be accessible to the public, you can explore the lush green campus and visit the serene Powai Lake adjacent to it.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://i.pinimg.com/originals/83/f1/64/83f164dc8a421dd798e66cf2e2fa939d.jpg" alt="Destination 6" class="destination-image">
+            <h2>Mcgm Hiranandani Garden</h2>
+            <p>Good view, nicely maintained, good plantation, had a beautiful evenings time spent with family.</p>
+            <br>
+            </div>
+    </div></body>
+</html>
+

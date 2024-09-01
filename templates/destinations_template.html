@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in MUMBAI</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        
+        <div class="destination-item">
+            <img src="https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2873&q=80" alt="Destination 1" class="destination-image">
+            <h2>Shahid Vijay salaskar udyan</h2>
+            <p>Shahid Vijay Salaskar Udyan was set up in the name of a brave martyr who sacrificed his life during the 2008 Mumbai attack.
+
+                The garden is well maintained and manicured and has a fixed timings to enter and use the facilities. </p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://images.firstpost.com/wp-content/uploads/2017/07/ghatkopar-khau-galli-02.jpg" alt="Destination 2" class="destination-image">
+            <h2>Khau gali</h2>
+            <p>Ghatkopar's Khau Galli is a haven for food lovers. You can savor a variety of street foods, snacks, and desserts that are sure to tantalize your taste buds.
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://media.weddingz.in/images/2fabcf17fe2fb2a083f5411f007fa0b3/lilac-1.jpg" alt="Destination 3" class="destination-image">
+            <h2>Jolly Gymkhana</h2>
+            <p>If you're into sports and recreational activities, Jolly Gymkhana is a great place. You can play cricket, badminton, or take a refreshing swim in their pool.
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://teja12.kuikr.com/is/a/c/1200x500/public/images/apartments/original_img/09g49m.gif" alt="Destination 4" class="destination-image">
+            <h2>Mcgm Hiranandani Garden</h2>
+            <p>Good view, nicely maintained, good plantation, had a beautiful evenings time spent with family.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://fastly.4sqi.net/img/general/600x600/xr6aA5ctuvHEm_d4d8EcENY3cu-qy0X3G95dpmD3rJo.jpg" alt="Destination 5" class="destination-image">
+            <h2>Haiko Market</h2>
+            <p>Haiko is a shopping mall with a garden & promenade outside. We were here to pick up wine for gifting. The Supermarket has a good collection of wines. There was also a friendly chap who helped us choose.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.H73LWij0yinLndAsECl-2AHaDc?pid=ImgDet&rs=1" alt="Destination 6" class="destination-image">
+            <h2>Shoppers Stop</h2>
+            <p>Located in R City Mall, Shoppers Stop is a well-known department store offering a wide range of clothing, accessories, and household items.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            height: 10vh;
+        }
+        header {
+            background-color:black;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color:grey ;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in MUMBAI</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/04/13/671400-powai-lake-01.jpg" alt="Destination 1" class="destination-image">
+            <h2>Powai lake</h2>
+            <p>One of several beautiful lakes in Bombay, this one is infested with crocodiles.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://media.weddingz.in/images/c032c73da8b278d943ae40839288fdc0/jolly-gymkhana-lantana.jpg" alt="Destination 2" class="destination-image">
+            <h2>Jolly Gymkhana</h2>
+            <p>If you're into sports and recreational activities, Jolly Gymkhana is a great place. You can play cricket, badminton, or take a refreshing swim in their pool.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://static2.tripoto.com/media/filter/tst/img/OgData/1549871071_kgm_fotor.jpg" alt="Destination 3" class="destination-image">
+            <h2>Khau gali</h2>
+            <p></p>Ghatkopar's Khau Galli is a haven for food lovers. You can savor a variety of street foods, snacks, and desserts that are sure to tantalize your taste buds.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.93f9f377f9d1bffc1a95caad69ef4c2b?rik=n9lSOlkajIQTuQ&riu=http%3a%2f%2fphotos.wikimapia.org%2fp%2f00%2f06%2f31%2f91%2f91_big.jpg&ehk=jYd3DVruLCh7OpJeN%2bmdTVrLoUF0pITMjs0FcVItblY%3d&risl=&pid=ImgRaw&r=0" alt="Destination 4" class="destination-image">
+            <h2>Shreyas cinema</h2>
+            <p>Catching a movie at Shreyas Cinema can be a fun and entertaining way to spend your time. It's a popular cinema in the area.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="http://img1.10bestmedia.com/Images/Photos/101678/crawford-market-mahatma-jyotiba-phule-747px-crawford-market_54_990x660_201406011646.png" alt="Destination 5" class="destination-image">
+            <h2>Mahatam Jyotiba phule market</h2>
+            <p>Housed in a building designed by Rudyard Kipling’s father, this market includes a colorful tableau of fresh produce, a meat section, bazaar area and extensive fabric market.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/40/da/6e/beautiful-deity-of-suvarna.jpg" alt="Destination 6" class="destination-image">
+            <h2>Suvarna Temple</h2>
+            <p>The Suvarna Temple also known as the Panchkutir temple is located right opposite Powai lake on JVLR. It is also reffered to as 9 mother children temple ans has a lot of serenity and calm. This ‘Nine Mother Children’ temple is one of the oldest holy places in Powai. 
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g304554-Activities-zfn13208645-Mumbai_Maharashtra.html">click here</a>
+        </div>
+    </div>
+</body>
+</html>

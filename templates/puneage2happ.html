@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in PUNE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+        </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.wyCIZoseloZsLecWL3HhBAAAAA?pid=ImgDet&rs=1" alt="Destination 1" class="destination-image">
+            <h2>High Spirits</h2>
+            <p>  Known for its live music and great ambiance.
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/06/14201736/12062017_empressgarden041.jpg" alt="Destination 2" class="destination-image">
+            <h2>Empress Garden</h2>
+            <p>A historic garden with a diverse collection of plants and trees.
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/05/52/ee/01/euriska.jpg" alt="Destination 3" class="destination-image">
+            <h2>Euriska </h2>
+            <p>A club with a Mediterranean vibe and electronic music.
+
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNDkxMzAzMjUvMTI2Mjg3NGY4MGY0MTZmNWFmYjdhOTU1NzBhNjBlNzIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" alt="Destination 4" class="destination-image">
+            <h2>Baner Pashan Biodiversity Park: 
+</h2>
+            <p>A great spot for nature lovers and bird watchers.
+
+
+
+
+</p>
+                        <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.oNUVi9PMEA3c-eMq5ykvTwHaJf?pid=ImgDet&rs=1" alt="Destination 5" class="destination-image">
+                        <h2> Hard Rock Cafe   </h2>
+
+            <p> Famous for its music, drinks, and American cuisine.
+
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.ZNo0ONeE-sVt5B86kczFfQHaDu?pid=ImgDet&rs=1" alt="Destination 6" class="destination-image">
+            <h2>Vetal Tekdi</h2>
+            <p> A hill with beautiful views of Pune, ideal for nature walks and hikes</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+            </div>
+    </div></body>
+</html>

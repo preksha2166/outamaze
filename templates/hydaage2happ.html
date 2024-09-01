@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in HYDERABAD</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.78bd65c28444404ba1992ed35eeb66d3?rik=j4tJnEEhOY58dA&riu=http%3a%2f%2famazingindiablog.in%2fwp-content%2fuploads%2f2016%2f02%2fRamoji-Flim-City-Hyderabad.jpg&ehk=fPr%2fNxNyWatAzvBoWUTQ7vArNRfrz4gjKdgi%2bVpFgz0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Destination 1" class="destination-image">
+            <h2>Ramoji Film City</h2>
+            <p>It's one of the largest film studios in the world and also has an amusement park with various attractions.</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1473,h_828,r_0,c_crop,q_60,fl_progressive/w_960,f_auto,c_fit/hyderabad-park/Wonderla_Main_Shot_EXT_co7wl1" alt="Destination 2" class="destination-image">
+            <h2>Wonderla Hyderabad</h2>
+            <p> Known for its thrilling rides and water park, it's a favorite for adrenaline seekers
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://i0.wp.com/attracttour.com/wp-content/uploads/2013/07/OceanPark-Hong-Kong.jpg" alt="Destination 3" class="destination-image">
+            <h2>Ocean Park</h2>
+            <p>A water park with exciting water slides and pools.
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.40759a94e7db4e6d30920ccabf97b796?rik=Eoo11LhuaFNgAg&riu=http%3a%2f%2fi0.wp.com%2fwww.untumble.com%2fblog%2fwp-content%2fuploads%2f2017%2f08%2fpark1-810x540.jpg&ehk=%2fo%2bXn%2fa9IjDFcKKp59Mz8opZrYT2wJAC7ZxaN8%2fzFzs%3d&risl=&pid=ImgRaw&r=0" alt="Destination 4" class="destination-image">
+            <h2>Jalavihar Water Park</h2>
+            <p>Offers water rides and attractions, perfect for a family day out
+
+</p>
+            
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.SkFFk8aIn_BWzmNSNlOG2wHaCn?pid=ImgDet&rs=1" alt="Destination 5" class="destination-image">
+            <h2>Mount Opera Multi-Theme Park Resort</h2>
+            <p> Features amusement rides, a water park, and a resort for an extended stay.
+
+
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://www.thetoptours.com/wp-content/uploads/history-of-hussain-sagar-lake.jpg" alt="Destination 6" class="destination-image">
+            <h2>Hussain Sagar Lake</h2>
+            <p>You can take a boat ride to the iconic Buddha statue located in the middle of the lake.
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297586-Activities-Hyderabad_Hyderabad_District_Telangana.html">click here</a>
+            </div>
+    </div></body>
+</html>
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f8f0e3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a0522d;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            height: 15vh;
+        }
+
+        nav {
+            background-color: #e9967a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a0522d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .destination-item {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 30px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .destination-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #a0522d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #a0522d;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e9967a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to visit in PUNE</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}#places"><i class="fa-solid fa-house"></i> Places</a></li>
+            <li><a href="{{ url_for('home') }}#about"><i class="fa-solid fa-user"></i>  About us</a></li>
+            
+            <li><a href="{{ url_for('home') }}#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+        </ul>
+        </nav>
+    <div class="destination">
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.lWBsoyeD-YL3hrqcg-p06wHaEL?pid=ImgDet&rs=1" alt="Destination 1" class="destination-image">
+            <h2>Aga Khan Palace</h2>
+            <p> A historic landmark with beautiful architecture and lush gardens.
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/OIP.dMAj15ocWxXw_XikOAmTbAHaE7?pid=ImgDet&rs=1" alt="Destination 2" class="destination-image">
+            <h2>Shaniwar Wada</h2>
+            <p> A historic fort palace known for its architectural grandeur.
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://th.bing.com/th/id/R.07ea66eaa802a5c9a620021bd8813490?rik=solNRhkO7JMuVQ&riu=http%3a%2f%2fmytourlogs.weebly.com%2fuploads%2f2%2f6%2f8%2f0%2f26805303%2f5262754_orig.jpg&ehk=DpvaHiKXrdInABC40vJcjQtiEVmS7VMGyS71eQgwaTk%3d&risl=&pid=ImgRaw&r=0" alt="Destination 3" class="destination-image">
+            <h2>Saras Baug </h2>
+            <p>A popular park with a Ganesh temple and a serene lake.
+
+
+
+</p>
+            
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://im.whatshot.in/img/2021/Feb/161615-a-1613066370.jpg" alt="Destination 4" class="destination-image">
+            <h2>Mi-A-Mi:
+</h2>
+            <p>Located in the JW Marriott, it's a high-end club with great cocktails.
+
+
+
+
+</p>
+                        <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://www.tourmyindia.com/states/maharashtra/images/rajiv-gandhi-zoological-park-pune1.jpg" alt="Destination 5" class="destination-image">
+            <h2>Rajiv Gandhi Zoological Park</h2>
+            <p>Home to a variety of animals and a fun place for families.
+
+
+</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+        </div>
+        <div class="destination-item">
+            <img src="https://www.townpune.com/wp-content/uploads/2017/06/Vetal-tekdi.jpg" alt="Destination 6" class="destination-image">
+            <h2>Vetal Tekdi</h2>
+            <p> A hill with beautiful views of Pune, ideal for nature walks and hikes</p>
+            <br>
+            <a href="https://www.tripadvisor.in/Attractions-g297654-Activities-Pune_Pune_District_Maharashtra.html">click here</a>
+            </div>
+    </div></body>
+</html>
